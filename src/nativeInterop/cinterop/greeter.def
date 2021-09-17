@@ -1,0 +1,7 @@
+package = org.greeter
+
+headers = /home/loopyelbarto/Dev/kotlin/cinterop-demo/build/greeter.h
+headerFilter = /home/loopyelbarto/Dev/kotlin/cinterop-demo/build/*
+
+compilerOpts.linux = -I/usr/include -I/usr/include/x86_64-linux-gnu
+linkerOpts.linux = /home/loopyelbarto/Dev/kotlin/cinterop-demo/build/greeter.so

@@ -1,0 +1,7 @@
+package = org.math.subtractor
+
+headers = /home/loopyelbarto/Dev/kotlin/HelloFromC/nativeLibs/cppSubtract/subtract.h
+headerFilter = /home/loopyelbarto/Dev/kotlin/HelloFromC/nativeLibs/cppSubtract/*
+
+compilerOpts.linux = -I/usr/include -I/usr/include/x86_64-linux-gnu
+linkerOpts.linux = /home/loopyelbarto/Dev/kotlin/HelloFromC/nativeLibs/cppSubtract/subtract.so

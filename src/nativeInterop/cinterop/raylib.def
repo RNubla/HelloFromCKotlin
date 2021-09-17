@@ -1,0 +1,10 @@
+package = raylib
+
+headers = /home/loopyelbarto/Dev/kotlin/HelloFromC/nativeLibs/raylib/include/raylib.h
+headerFilter = /home/loopyelbarto/Dev/kotlin/HelloFromC/nativeLibs/raylib/include/*
+
+staticLibraries = libraylib.a libraylib.so.3.7.0 libraylib.so.370
+libraryPaths =  /home/loopyelbarto/Dev/kotlin/HelloFromC/nativeLibs/raylib/lib
+
+compilerOpts.linux = -I/usr/include -I/usr/include/x86_64-linux-gnu
+linkerOpts.linux = /home/loopyelbarto/Dev/kotlin/HelloFromC/nativeLibs/raylib/lib/libraylib.so
