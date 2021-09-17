@@ -1,13 +1,13 @@
 import kotlinx.cinterop.*
-//import org.greeter.*
-//import org.math.adder.*
-//import org.math.subtractor.*
+import org.greeter.*
+import org.math.adder.*
+import org.math.subtractor.*
 fun main() {
 
     println("Hello, Kotlin/Native!")
-//    println(hello("From C")?.toKString())
-//    println(add(5,2))
-//    println(subtract(5,2))
+    println(hello("From C")?.toKString())
+    println(add(5,2))
+    println(subtract(5,2))
 //    println(hi())
 }
 

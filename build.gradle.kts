@@ -25,35 +25,35 @@ kotlin {
                 entryPoint = "main"
             }
         }
-//        compilations["main"].cinterops{
-//            val greeter by creating{
-//                when(preset){
-//                    presets["linuxX64"] -> includeDirs.headerFilterOnly("/usr/include", "/usr/include/x86_64-linux-gnu")
-//                }
-//            }
-//
-//        }
-//        compilations["main"].cinterops{
-//            val add by creating{
-//                when (preset){
-//                    presets["linuxX64"] -> includeDirs.headerFilterOnly("/usr/include", "/usr/include/x86_64-linux-gnu")
-//                }
-//            }
-//        }
-//        compilations["main"].cinterops{
-//            val subtract by creating{
-//                when (preset){
-//                    presets["linuxX64"] -> includeDirs.headerFilterOnly("/usr/include", "/usr/include/x86_64-linux-gnu")
-//                }
-//            }
-//        }
         compilations["main"].cinterops{
-            val raylib by creating{
+            val greeter by creating{
+                when(preset){
+                    presets["linuxX64"] -> includeDirs.headerFilterOnly("/usr/include", "/usr/include/x86_64-linux-gnu")
+                }
+            }
+
+        }
+        compilations["main"].cinterops{
+            val add by creating{
                 when (preset){
                     presets["linuxX64"] -> includeDirs.headerFilterOnly("/usr/include", "/usr/include/x86_64-linux-gnu")
                 }
             }
         }
+        compilations["main"].cinterops{
+            val subtract by creating{
+                when (preset){
+                    presets["linuxX64"] -> includeDirs.headerFilterOnly("/usr/include", "/usr/include/x86_64-linux-gnu")
+                }
+            }
+        }
+//        compilations["main"].cinterops{
+//            val raylib by creating{
+//                when (preset){
+//                    presets["linuxX64"] -> includeDirs.headerFilterOnly("/usr/include", "/usr/include/x86_64-linux-gnu")
+//                }
+//            }
+//        }
 
     }
     sourceSets {
